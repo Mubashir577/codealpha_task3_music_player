@@ -1,0 +1,100 @@
+
+body {
+    background-color: #1c1c1c; 
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    font-family: 'Helvetica Neue', Arial, sans-serif;
+}
+
+.welcome-message {
+    position: absolute;
+    top: 10px;
+    width: 100%;
+    text-align: center;
+}
+
+.welcome-message h1 {
+    color: #ffffff;
+    font-size: 2em;
+    font-weight: bold;
+    margin: 0;
+    padding: 10px;
+    background: linear-gradient(135deg, #1f4037 0%, #99f2c8 100%);
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+}
+
+.music-player {
+    background: linear-gradient(135deg, #1f4037 0%, #99f2c8 100%);
+    padding: 20px;
+    border-radius: 20px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
+    text-align: center;
+    width: 350px;
+    color: #fff; /* Light text color */
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.music-player:hover {
+    transform: scale(1.05);
+    box-shadow: 0 12px 30px rgba(0, 0, 0, 0.5);
+}
+
+.music-info {
+    margin-bottom: 20px;
+}
+
+.music-info h2 {
+    margin: 0;
+    font-size: 1.5em;
+    font-weight: bold;
+    color: #f0f0f0;
+}
+
+.music-info p {
+    margin: 5px 0 0;
+    font-size: 1.2em;
+    color: #d0d0d0;
+}
+
+.controls {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 20px;
+}
+
+.btn {
+    background-color: #4caf50;
+    border: none;
+    color: white;
+    padding: 15px 30px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+    border-radius: 50px;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.btn:hover {
+    background-color: #45a049;
+    transform: translateY(-3px);
+}
+
+.btn:active {
+    transform: translateY(1px);
+}
+
+#play.playing {
+    background-color: #f44336;
+}
+
+audio {
+    display: none; 
+}
